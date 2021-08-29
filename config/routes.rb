@@ -6,6 +6,7 @@ Rails.application.routes.draw do
     :confirmations => 'users/confirmations',
     :unlocks => 'users/unlocks',
   }
+  
   devise_scope :user do
     root :to => "users/sessions#new"
     get "signup", :to => "users/registrations#new"
